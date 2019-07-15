@@ -1,0 +1,19 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "startpage",
+  "scripts": {
+    "start": "serve"
+  },
+  "author": "stringfu",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^1.9.1",
+    "jquery.marquee": "^1.5.0",
+    "popper.js": "^1.15.0"
+  },
+  "devDependencies": {
+    "serve": "^11.0.1"
+  }
+}

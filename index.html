@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>startpage</title>
+
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">LET'S DO THIS</h1>
+        </div>
+      </div>
+
+      <!-- Search Card Row -->
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 col-md-12">
+          <div class="card shadow-lg">
+
+            <!-- Card Body -->
+            <div class="card-body">
+
+              <!-- Tabs Nav-->
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="web-tab" data-toggle="tab" href="#web" 
+                    role="tab" aria-controls="web" aria-selected="true">
+                    Web
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="google-tab" data-toggle="tab" href="#google" 
+                    role="tab" aria-controls="google" aria-selected="true">
+                    Google
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="ddg-tab" data-toggle="tab" href="#ddg" role="tab" 
+                    aria-controls="ddg" aria-selected="false">
+                    DuckDuckGo
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="youtube-tab" data-toggle="tab" href="#youtube" role="tab" 
+                    aria-controls="youtube" aria-selected="false">
+                    YouTube
+                  </a>
+                </li>
+              </ul>
+
+              <!-- Tab Content-->
+              <div class="tab-content" id="myTabContent">
+
+                <!-- Web Tab -->
+                <div class="tab-pane fade show active" id="web" role="tabpanel" 
+                  aria-labelledby="web-tab">
+                  <form id="webAddressForm" method="get" action="">
+                    <div class="form-group">
+                      <br/>
+                      <label for="webAddress"><h2>Web URL</h2></label>
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control" 
+                          id="webAddress"
+                          placeholder="Address..." 
+                          aria-label="Address..."  
+                          aria-describedby="button-addon1">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" type="submit" 
+                            id="button-addon1"><i class="fa fa-link"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <!-- Google Tab -->
+                <div class="tab-pane fade" id="google" role="tabpanel" 
+                  aria-labelledby="google-tab">
+                  <form method="get" action="https://www.google.com/search">
+                    <div class="form-group">
+                      <br/>
+                      <label for="googleSearch"><h2>Google</h2></label>
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control" 
+                          id="googleSearch" name="q" value=""
+                          placeholder="Search..." 
+                          aria-label="Search..."  
+                          aria-describedby="button-addon1">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" type="submit" 
+                            id="button-addon1"><i class="fa fa-search"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <!-- DuckDuckGo Tab-->
+                <div class="tab-pane fade" id="ddg" role="tabpanel" 
+                  aria-labelledby="ddg-tab">
+                  <form method="get" action="https://duckduckgo.com/?">
+                    <div class="form-group">
+                      <br/>
+                      <label for="ddgSearch"><h2>DuckDuckGo</h2></label>
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control" 
+                          id="ddgSearch" name="q" value=""
+                          placeholder="Search..." 
+                          aria-label="Search..."  
+                          aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" type="submit" 
+                            id="button-addon2"><i class="fa fa-search"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <!-- Youtube Tab-->
+                <div class="tab-pane fade" id="youtube" role="tabpanel" 
+                  aria-labelledby="youtube-tab">
+                  <form method="get" action="https://www.youtube.com/results?">
+                    <div class="form-group">
+                      <br/>
+                      <label for="youtubeSearch"><h2>YouTube</h2></label>
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control" 
+                          id="youtubeSearch" name="search_query" value=""
+                          placeholder="Search..." 
+                          aria-label="Search..."  
+                          aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" type="submit" 
+                            id="button-addon2"><i class="fa fa-search"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+            </div>
+            <!-- End Search Tab Content -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- End Search Card Row -->
+
+    <!-- Link Card Row -->
+    <div class="row mt-3">
+      <div class="col-lg-8 offset-lg-2 col-md-12">
+        <div class="card shadow-lg">
+
+          <!-- Card Body -->
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="text-center">
+                  Links
+                </h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <ul>
+                  <li>
+                    <a href="https://goalliant.visualstudio.com/">Azure DevOps</a>
+                  </li>
+                  <li>
+                    <a href="https://portal.azure.com/">Azure Portal</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/">Github</a>
+                  </li>
+                  <li>
+                    <a href="https://stackoverflow.com/">StackOverflow</a>
+                  </li>
+                  <li>
+                    <a href="https://www.npmjs.com/">npm</a>
+                  </li>
+                  <li>
+                    <a href="https://angular.io/docs/">Angular Documentation</a>
+                  </li>
+                  <li>
+                    <a href="https://getbootstrap.com/docs/">Bootstrap Documentation</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul>
+                  <li>
+                    <a href="https://www.reddit.com/">Reddit</a>
+                  </li>
+                  <li>
+                    <a href="https://boards.4channel.org/g/">/g/</a>
+                  </li>
+                  <li>
+                    <a href="https://www.crunchyroll.com/">CR</a>
+                  </li>
+                  <li>
+                    <a href="https://9anime.to/">9</a>
+                  </li>
+                  <li>
+                    <a href="https://anilist.co/">AList</a>
+                  </li>
+                  <li>
+                    <a href="https://netflix.com/">Netflix</a>
+                  </li>
+                  <li>
+                    <a href="https://amazon.com/">Amazon</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Link Card Row -->
+
+    <!-- Weather Card Row -->
+    <div class="row mt-3">
+      <div class="col-lg-8 offset-lg-2 col-md-12">
+        <div class="card shadow-lg">
+
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="text-center">
+                  Weather
+                </h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                  <script type='text/javascript' src='https://darksky.net/widget/default-small/38.958670,-90.21509/us12/en.js?width=100%&height=70&title=Full Forecast&textColor=ffffff&bgColor=transparent&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=us'></script>   
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Weather Card Row -->
+
+    <div class="row mt-3">
+        <div class="col-lg-8 offset-lg-2 col-md-12">
+          <div class="card shadow-lg">
+  
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <h2 class="text-center">
+                    S&P 500
+                  </h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <!-- TradingView Widget BEGIN -->
+                  <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/indices/" rel="noopener" target="_blank"></div>
+                      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+                        {
+                          "showChart": true,
+                          "locale": "en",
+                          "width": "100%",
+                          "height": "100%",
+                          "largeChartUrl": "",
+                          "isTransparent": true,
+                          "plotLineColorGrowing": "rgba(242, 242, 242, 1)",
+                          "plotLineColorFalling": "rgba(255, 255, 255, 1)",
+                          "gridLineColor": "rgba(182, 182, 182, 1)",
+                          "scaleFontColor": "rgba(255, 255, 255, 1)",
+                          "belowLineFillColorGrowing": "rgba(0, 0, 0, 0.12)",
+                          "belowLineFillColorFalling": "rgba(203, 203, 203, 0.12)",
+                          "symbolActiveColor": "rgba(238, 238, 238, 1)",
+                          "tabs": [
+                            {
+                              "title": "Indices",
+                              "symbols": [
+                                {
+                                  "s": "OANDA:SPX500USD",
+                                  "d": "S&P 500"
+                                }
+                              ],
+                              "originalTitle": "Indices"
+                            }
+                          ]
+                        }
+                      </script>
+                  </div>
+                  <!-- TradingView Widget END -->
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/node_modules/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- User Scripts-->
+    <script src="/js/script.js"></script>
+  </body>
+</html>
